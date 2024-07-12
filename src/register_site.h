@@ -5,7 +5,6 @@
 int register_site(const char* domain, const char* tld, const char* github) {
     PyObject *pName, *pModule, *pFunc;
     PyObject *pArgs, *pValue;
-    int i;
 
     Py_Initialize();
     PyRun_SimpleString("import sys\nimport os");

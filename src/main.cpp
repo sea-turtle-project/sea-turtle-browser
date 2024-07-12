@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL2/SDL.h>
+#include "register_site.h"
 
 class Window {
     SDL_Window* window;
@@ -17,6 +18,8 @@ int main() {
         Window window("Seaturtle Browser");
         SDL_Delay(5000);
     }
+
+    register_site("good", "sea", "https://github.com/tathyagarg/tathyagarg");
 
     SDL_Quit();
 
